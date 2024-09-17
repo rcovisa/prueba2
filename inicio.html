@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Pokémon</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Selecciona tus Pokémon</h1>
+        <div class="pokemon-selection">
+            <div>
+                <label for="pokemon1">Primer Pokémon:</label>
+                <select id="pokemon1" onchange="updatePokemonImage(1)"></select>
+                <img id="pokemon1-image" src="" alt="Pokémon 1">
+            </div>
+            <div>
+                <label for="pokemon2">Segundo Pokémon:</label>
+                <select id="pokemon2" onchange="updatePokemonImage(2)"></select>
+                <img id="pokemon2-image" src="" alt="Pokémon 2">
+            </div>
+        </div>
+        <button onclick="startBattle()">Comenzar Batalla</button>
+    </div>
+    <script src="selection.js"></script>
+</body>
+</html>
